@@ -18,7 +18,7 @@ public class FanoutExchange
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 
-        var exchangeName = "fanout-exchange";
+        var exchangeName = "fanout.exchange";
 
         channel.ExchangeDeclare(exchangeName, ExchangeType.Fanout, arguments: null);
 

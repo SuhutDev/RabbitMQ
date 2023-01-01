@@ -18,7 +18,7 @@ public class TopicExchange
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 
-        var exchangeName = "topic-exchange";
+        var exchangeName = "topic.exchange";
 
         channel.ExchangeDeclare(exchangeName, ExchangeType.Topic, arguments: null);
 

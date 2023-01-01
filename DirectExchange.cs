@@ -18,7 +18,7 @@ public class DirectExchange
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 
-        var exchangeName = "direct-exchange";
+        var exchangeName = "direct.exchange";
 
         channel.ExchangeDeclare(exchangeName, ExchangeType.Direct, arguments: null);
 

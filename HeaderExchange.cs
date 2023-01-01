@@ -18,7 +18,7 @@ public class HeadersExchange
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 
-        var exchangeName = "headers-exchange";
+        var exchangeName = "headers.exchange";
 
         channel.ExchangeDeclare(exchangeName, ExchangeType.Headers, arguments: null);
 
