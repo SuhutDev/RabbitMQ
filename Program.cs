@@ -3,4 +3,5 @@
 
 //DirectExchange.TestRun();
 //TopicExchange.TestRun();
-FanoutExchange.TestRun();
+// FanoutExchange.TestRun();
+HeadersExchange.TestRun();
