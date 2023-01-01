@@ -1,5 +1,6 @@
 ﻿using RabbitMQ;
 
 
-// DirectExchange.TestRun();
-TopicExchange.TestRun();
+//DirectExchange.TestRun();
+//TopicExchange.TestRun();
+FanoutExchange.TestRun();
