@@ -1,0 +1,4 @@
+﻿using RabbitMQ;
+
+
+DirectExchange.TestRun();
