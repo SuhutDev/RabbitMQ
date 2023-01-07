@@ -6,4 +6,5 @@
 //FanoutExchange.TestRun();
 // HeadersExchange.TestRun();
 // DeadLetterReject.TestRun();
-DeadLetterTimeout.TestRun();
+// DeadLetterTimeout.TestRun();
+DeadLetterWorkerRetryError.TestRun();

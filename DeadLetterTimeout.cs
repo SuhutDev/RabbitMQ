@@ -18,7 +18,7 @@ public class DeadLetterTimeout
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 
-        var name = "deadletter.timeout";
+        var name = "deadletter-timeout";
         var workerExchange = $"ex.{name}";
         var workerQueue = $"q.{name}";
 

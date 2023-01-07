@@ -18,7 +18,7 @@ public class DeadLetterReject
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 
-        var name = "deadletter.reject";
+        var name = "deadletter-reject";
         var workerExchange = $"ex.{name}";
         var workerQueue = $"q.{name}";
 
@@ -70,7 +70,8 @@ public class DeadLetterReject
                 }
                 else
                 {
-                    channel.BasicReject(e.DeliveryTag, false);
+                    channel.BasicNack(e.DeliveryTag, false, false);
+                    // channel.BasicReject(e.DeliveryTag, false);
                 }
 
             };
