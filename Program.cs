@@ -3,5 +3,6 @@
 
 //DirectExchange.TestRun();
 //TopicExchange.TestRun();
-// FanoutExchange.TestRun();
-HeadersExchange.TestRun();
+//FanoutExchange.TestRun();
+// HeadersExchange.TestRun();
+DeadLetterReject.TestRun();
